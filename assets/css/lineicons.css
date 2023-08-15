@@ -1,0 +1,18 @@
+/*--------------------------------
+
+Lineicons Free Web Font
+Crafted by Lineicons.com Team
+Version: 4.0
+
+-------------------------------- */
+
+@font-face {
+    font-family: 'lineicons';
+    src: url('../fonts/LineIcons.eot');
+    src: url('../fonts/LineIcons.eot') format('embedded-opentype'),
+    url('../fonts/LineIcons.woff2') format('woff2'),
+    url('../fonts/LineIcons.woff') format('woff'),
+    url('../fonts/LineIcons.ttf') format('truetype'),
+    url('../fonts/LineIcons.svg') format('svg');
+}
+
