@@ -224,6 +224,21 @@ dl {
     margin-bottom: 1rem;
 }
 
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+}
+
 .collapse:not(.show) {
     display: none;
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: 0.25;
 }

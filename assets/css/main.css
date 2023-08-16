@@ -139,3 +139,81 @@ ol {
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
 }
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item a .icon {
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 6px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li a.active, .sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li a:hover {
+    color: #4a6cf7;
+    border-color: rgba(74, 108, 247, 0.15);
+    background: rgba(74, 108, 247, 0.1);
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul {
+    padding: 0px 15px;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children > a::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children > a.collapsed::before {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: #4a6cf7;
+    border-radius: 0 3px 3px 0px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.active > a::before,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.active > a.collapsed::before,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item:hover > a::before,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item:hover > a.collapsed::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar-nav-wrapper .sidebar-nav .divider {
+    padding: 5px 25px;
+    width: 100%;
+}
+
+.sidebar-nav-wrapper .sidebar-nav .divider hr {
+    height: 1px;
+    background: #e2e2e2;
+}
+
+
+
+/* =========== End of sidebar css =========== */
+
+
+
