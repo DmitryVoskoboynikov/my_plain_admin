@@ -53,6 +53,106 @@ ol {
     list-style-type: none;
 }
 
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0px;
+}
+
+/* ============= typography css ============= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: #262d3f;
+    margin: 0;
+}
+
+h1,
+.h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h2,
+.h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h3,
+.h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h4,
+.h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h5,
+.h5 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+h6,
+.h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+/* ============= End of typography css ============= */
+
+/* ========== Buttons css ========== */
+.main-btn {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 15px 45px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 5;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+/* buttons hover effect */
+.btn-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+/* primary buttons */
+.primary-btn {
+    background: #4a6cf7;
+    color: #fff;
+}
+
+/* ========== End of buttons css ========== */
+
 /* =========== Sidebar css =========== */
 .sidebar-nav-wrapper {
     background: #fff;
@@ -175,6 +275,14 @@ ol {
     visibility: hidden;
 }
 
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.active > a::before,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.active > a.collapsed::before,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item:hover > a::before,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item:hover > a.collapsed::before {
+    opacity: 1;
+    visibility: visible;
+}
+
 .sidebar-nav-wrapper .sidebar-nav ul .nav-item a::before {
     content: "";
     position: absolute;
@@ -193,14 +301,6 @@ ol {
     transition: all 0.3s ease-out 0s;
 }
 
-.sidebar-nav-wrapper .sidebar-nav ul .nav-item.active > a::before,
-.sidebar-nav-wrapper .sidebar-nav ul .nav-item.active > a.collapsed::before,
-.sidebar-nav-wrapper .sidebar-nav ul .nav-item:hover > a::before,
-.sidebar-nav-wrapper .sidebar-nav ul .nav-item:hover > a.collapsed::before {
-    opacity: 1;
-    visibility: visible;
-}
-
 .sidebar-nav-wrapper .sidebar-nav .divider {
     padding: 5px 25px;
     width: 100%;
@@ -211,9 +311,40 @@ ol {
     background: #e2e2e2;
 }
 
+/* =========== Promo box ============== */
+.promo-box {
+    box-shadow: 0px 10px 20px rgba(200, 208, 216, 0.3);
+    padding: 24px 16px;
+    text-align: center;
+    max-width: 210px;
+    margin: 0 auto;
+    margin-top: 32px;
+    border-radius: 4px;
+}
+
+.promo-box h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.promo-box p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.promo-box .main-btn {
+    padding: 12px;
+    width: 100%;
+}
+
+/* =========== End of Promo box ======= */
 
 
 /* =========== End of sidebar css =========== */
+
+
 
 
 
