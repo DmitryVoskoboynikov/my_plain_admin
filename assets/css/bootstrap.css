@@ -235,6 +235,12 @@ ul ol {
     display: none;
 }
 
+.collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+}
+
 hr {
     margin: 1rem 0;
     color: inherit;
