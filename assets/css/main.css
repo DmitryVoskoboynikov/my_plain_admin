@@ -117,7 +117,13 @@ h6,
     font-weight: 600;
 }
 
+/* ========== header css ========== */
+.header {
+    padding: 30px 0;
+    background: #fff;
+}
 
+/* ========== end of header css ========== */
 
 /* ============= End of typography css ============= */
 
@@ -366,6 +372,26 @@ h6,
         display: none;
     }
 }
+
+/* =========== start of main-wrapper == */
+.main-wrapper {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    margin-left: 250px;
+    min-height: 100vh;
+    padding-bottom: 85px;
+    position: relative;
+}
+
+.main-wrapper .container-fluid {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* =========== end of main-wrapper  === */
 
 
 
