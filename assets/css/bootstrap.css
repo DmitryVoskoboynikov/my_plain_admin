@@ -298,3 +298,37 @@ p {
     margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+}
+
+/* ================ col ===================== */
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    .col-md-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .col-lg-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+}
+
+/* ================ end of col ============== */
+

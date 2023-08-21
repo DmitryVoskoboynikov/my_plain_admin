@@ -188,6 +188,14 @@ h6,
     transform: translateX(0);
 }
 
+.sidebar-nav-wrapper.active {
+    -webkit-transform: translateX(-260px);
+    -moz-transform: translateX(-260px);
+    -ms-transform: translateX(-260px);
+    -o-transform: translateX(-260px);
+    transform: translateX(-260px);
+}
+
 .sidebar-nav-wrapper .navbar-logo {
     text-align: center;
     padding: 0 25px;
@@ -384,6 +392,10 @@ h6,
     min-height: 100vh;
     padding-bottom: 85px;
     position: relative;
+}
+
+.main-wrapper.active {
+    margin-left: 0;
 }
 
 .main-wrapper .container-fluid {
