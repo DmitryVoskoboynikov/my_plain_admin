@@ -272,6 +272,45 @@ p {
     margin-bottom: 1rem;
 }
 
+/* ======= Form elements ====== */
+
+button {
+    border-radius: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button;
+}
+
+button:not(:disabled),
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+
+
+/* ===== End of Form Elements == */
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -331,4 +370,17 @@ p {
 }
 
 /* ================ end of col ============== */
+
+.d-flex {
+    display: flex !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.me-2 {
+    margin-right: 0.5rem !important;
+}
+
 

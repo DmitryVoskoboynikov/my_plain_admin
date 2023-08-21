@@ -16,3 +16,23 @@ Version: 4.0
     url('../fonts/LineIcons.svg') format('svg');
 }
 
+/* base class */
+.lni {
+    display: inline-block;
+    font: normal normal normal 1em/1 'lineicons';
+    color: inherit;
+    flex-shrink: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.lni-chevron-left::before {
+    content: "\eb0f";
+}
+
+.lni-menu::before {
+    content: "\ea25";
+}
+
+
+
