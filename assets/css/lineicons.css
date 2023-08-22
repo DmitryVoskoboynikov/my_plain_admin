@@ -34,5 +34,9 @@ Version: 4.0
     content: "\ea25";
 }
 
+.lni-search-alt::before {
+    content: "\ea17";
+}
+
 
 

@@ -375,6 +375,17 @@ button:not(:disabled),
     display: flex !important;
 }
 
+.d-none {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .d-md-flex {
+        display: flex !important;
+    }
+
+}
+
 .align-items-center {
     align-items: center !important;
 }
