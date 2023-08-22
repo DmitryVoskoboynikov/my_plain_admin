@@ -20,6 +20,21 @@ body {
     box-sizing: border-box;
 }
 
+a:focus,
+input:focus,
+textarea:focus,
+button:focus,
+.btn:focus,
+.btn.focus,
+.btn:not(:disabled):not(.disabled).active,
+.btn:not(:disabled):not(.disabled):active {
+    text-decoration: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 button,
 a {
     -webkit-transition: all 0.3s ease-out 0s;
@@ -150,6 +165,11 @@ h6,
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
+}
+
+.header .header-left .header-search form input:focus {
+    border-color: #4a6cf7;
+    background: #fff;
 }
 
 .header .header-left .header-search form button {
