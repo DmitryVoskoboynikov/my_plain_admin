@@ -38,5 +38,9 @@ Version: 4.0
     content: "\ea17";
 }
 
+.lni-alarm::before {
+    content: "\ea4e";
+}
+
 
 
