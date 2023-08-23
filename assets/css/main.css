@@ -475,6 +475,17 @@ h6,
     font-size: 18px;
 }
 
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item a .icon svg {
+    fill: currentColor;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.active > a,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.active > a.collapsed,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item:hover > a,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item:hover > a.collapsed {
+    color: #262d3f;
+}
+
 .sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li a {
     font-size: 14px;
     font-weight: 400;
@@ -485,7 +496,8 @@ h6,
     border: 1px solid transparent;
 }
 
-.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li a.active, .sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li a:hover {
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li a.active,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li a:hover {
     color: #4a6cf7;
     border-color: rgba(74, 108, 247, 0.15);
     background: rgba(74, 108, 247, 0.1);
