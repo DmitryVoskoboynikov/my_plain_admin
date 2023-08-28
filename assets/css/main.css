@@ -304,6 +304,10 @@ h6,
     transform: translate3d(0px, 60px, 0px);
 }
 
+.header .header-right .header-message-box .dropdown-menu.dropdown-menu-end {
+    transform: translate3d(0px, 60px, 0px);
+}
+
 /* ========== end of header css ========== */
 
 /* ============= End of typography css ============= */

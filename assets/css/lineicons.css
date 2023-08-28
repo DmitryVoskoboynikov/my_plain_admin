@@ -42,5 +42,13 @@ Version: 4.0
     content: "\ea4e";
 }
 
+.lni-funnel::before {
+    content: "\eac9";
+}
+
+.lni-envelope::before {
+    content: "\eb5c";
+}
+
 
 
