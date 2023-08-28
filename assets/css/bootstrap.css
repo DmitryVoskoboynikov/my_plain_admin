@@ -282,6 +282,10 @@ button {
     border-radius: 0;
 }
 
+button:focus:not(:focus-visible) {
+    outline: 0;
+}
+
 input,
 button,
 select,
@@ -465,4 +469,13 @@ button:not(:disabled),
 }
 
 /* ======== End of Dropdown == */
+
+.border-0 {
+    border: 0 !important;
+}
+
+.bg-transparent {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
+}
 

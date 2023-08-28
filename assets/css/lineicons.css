@@ -26,12 +26,20 @@ Version: 4.0
     -moz-osx-font-smoothing: grayscale;
 }
 
+.lni-user::before {
+    content: "\ea08";
+}
+
 .lni-chevron-left::before {
     content: "\eb0f";
 }
 
 .lni-menu::before {
     content: "\ea25";
+}
+
+.lni-cog::before {
+    content: "\ea3e";
 }
 
 .lni-search-alt::before {
@@ -46,9 +54,19 @@ Version: 4.0
     content: "\eac9";
 }
 
+.lni-chevron-down::before {
+    content: "\eb11";
+}
+
 .lni-envelope::before {
     content: "\eb5c";
 }
 
+.lni-inbox::before {
+    content: "\eb5a";
+}
 
+.lni-exit::before {
+    content: "\eb03";
+}
 
