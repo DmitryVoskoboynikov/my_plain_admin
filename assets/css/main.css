@@ -136,6 +136,15 @@ h6,
     font-weight: 400;
 }
 
+.text-bold {
+    font-weight: 700;
+}
+
+.text-sm {
+    font-size: 14px;
+    line-height: 22px;
+}
+
 /* ========== breadcrumb ============ */
 .breadcrumb-wrapper {
     display: flex;
@@ -722,9 +731,54 @@ h6,
 
 /* =========== end of main-wrapper  === */
 
+/* ======= icon-card ======== */
+.icon-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 30px 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0px 10px 20px rgba(200, 208, 216, 0.3);
+    border-radius: 10px;
+}
 
+.icon-card .icon {
+    max-width: 46px;
+    width: 100%;
+    height: 46px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-right: 20px;
+    background: rgba(74, 108, 247, 0.1);
+    color: #4a6cf7;
+    font-weight: 700;
+}
 
-/* =========== End of sidebar css =========== */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .icon-card h6 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .icon-card h3 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .icon-card .icon {
+        margin-right: 10px;
+    }
+}
+
+.icon-card .icon.purple {
+    background: rgba(155, 81, 224, 0.1);
+    color: #9b51e0;
+}
 
 /* ======= Margin Right ======= */
 .mr-20 {
@@ -732,6 +786,10 @@ h6,
 }
 
 /* ======= Margin Bottom ======= */
+.mb-10 {
+    margin-bottom: 10px;
+}
+
 .mb-30 {
     margin-bottom: 30px;
 }
@@ -744,6 +802,15 @@ h6,
 /* ======= Padding Top ======= */
 .pt-30 {
     padding-top: 30px;
+}
+
+/* ======== Text Colors ========== */
+.text-success {
+    color: #219653 !important;
+}
+
+.text-gray {
+    color: #5d657b !important;
 }
 
 

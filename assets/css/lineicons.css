@@ -70,3 +70,10 @@ Version: 4.0
     content: "\eb03";
 }
 
+.lni-cart-full::before {
+    content: "\eb7f";
+}
+
+.lni-arrow-up::before {
+    content: "\eb15";
+}
