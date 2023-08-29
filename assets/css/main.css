@@ -136,6 +136,29 @@ h6,
     font-weight: 400;
 }
 
+/* ========== breadcrumb ============ */
+.breadcrumb-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+    .breadcrumb-wrapper {
+        justify-content: flex-start;
+    }
+}
+.breadcrumb-wrapper .breadcrumb li {
+    font-size: 14px;
+    color: #4a6cf7;
+}
+
+.breadcrumb-wrapper .breadcrumb li a {
+    color: #5d657b;
+}
+.breadcrumb-wrapper .breadcrumb li a:hover {
+    color: #4a6cf7;
+}
+
 /* ========== header css ========== */
 .header {
     padding: 30px 0;
@@ -377,10 +400,6 @@ h6,
     width: 100%;
     border-radius: 50%;
 }
-
-/* ========== end of header css ========== */
-
-/* ============= End of typography css ============= */
 
 /* ========== Buttons css ========== */
 .main-btn {
@@ -712,15 +731,20 @@ h6,
     margin-right: 20px;
 }
 
-/* ======= End of Margin Right  */
+/* ======= Margin Bottom ======= */
+.mb-30 {
+    margin-bottom: 30px;
+}
 
 /* ======= Margin Left ======= */
 .ml-15 {
     margin-left: 15px;
 }
 
-/* ======= End of Margin Left= */
-
+/* ======= Padding Top ======= */
+.pt-30 {
+    padding-top: 30px;
+}
 
 
 
