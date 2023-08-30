@@ -325,6 +325,10 @@ button:not(:disabled),
     cursor: pointer;
 }
 
+select {
+    word-wrap: normal;
+}
+
 
 /* ===== End of Form Elements == */
 
@@ -554,6 +558,15 @@ button:not(:disabled),
 .text-success {
     --bs-text-opacity: 1;
     color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+}
+
+
+.flex-wrap {
+    flex-wrap: wrap !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
 }
 
 

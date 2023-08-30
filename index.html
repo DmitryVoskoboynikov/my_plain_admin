@@ -584,6 +584,99 @@
                         </div>
                         <!-- End Col -->
 
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="icon-card mb-30">
+                                <div class="icon success">
+                                    <i class="lni lni-dollar"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="mb-10">Total Income</h6>
+                                    <h3 class="text-bold mb-10">$74,567</h3>
+                                    <p class="text-sm text-success">
+                                        <i class="lni lni-arrow-up"></i> +5.45%
+                                        <span class="text-gray">Increased</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Icon Cart -->
+                        </div>
+                        <!-- End Col -->
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="icon-card mb-30">
+                                <div class="icon primary">
+                                    <i class="lni lni-credit-cards"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="mb-10">Total Expense</h6>
+                                    <h3 class="text-bold mb-10">$24,567</h3>
+                                    <p class="text-sm text-danger">
+                                        <i class="lni lni-arrow-down"></i> -2.00%
+                                        <span class="text-gray">Expense</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Icon Cart -->
+                        </div>
+                        <!-- End Col -->
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="icon-card mb-30">
+                                <div class="icon orange">
+                                    <i class="lni lni-user"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="mb-10">New User</h6>
+                                    <h3 class="text-bold mb-10">34567</h3>
+                                    <p class="text-sm text-danger">
+                                        <i class="lni lni-arrow-down"></i> -25.00%
+                                        <span class="text-gray"> Earning</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Icon Cart -->
+                        </div>
+                        <!-- End Col -->
+
+                    </div>
+                    <!-- End Row -->
+
+                    <div class="row">
+
+                        <div class="col-lg-7">
+                            <div class="card-style mb-30">
+                                <div class="title d-flex flex-wrap justify-content-between">
+                                    <div class="left">
+                                        <h6 class="text-medium mb-10">Yearly subscription</h6>
+                                        <h3 class="text-bold">$245,479</h3>
+                                    </div>
+                                    <div class="right">
+                                        <div class="select-style-1">
+                                            <div class="select-position select-sm">
+                                                <select class="light-bg">
+                                                    <option value="">Yearly</option>
+                                                    <option value="">Monthly</option>
+                                                    <option value="">Weekly</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- end select -->
+                                    </div>
+                                </div>
+                                <!-- End Title -->
+
+                                <div class="chart">
+                                    <canvas
+                                            id="Chart1"
+                                            style="width: 100%; height: 400px"
+                                    ></canvas>
+                                </div>
+                                <!-- End Chart -->
+
+                            </div>
+                        </div>
+                        <!-- End Col -->
+
 
                     </div>
                     <!-- End Row -->
@@ -596,6 +689,126 @@
 
         <!-- ========= All Javascript files linkup ======== -->
         <script src="assets/js/bootstrap.bundle.js"></script>
+        <script src="assets/js/Chart.js"></script>
         <script src="assets/js/main.js"></script>
+
+        <script>
+
+
+
+            // =========== chart one start
+            const ctx1 = document.getElementById("Chart1").getContext("2d");
+            const chart1 = new Chart(ctx1, {
+                // The type of chart we want to create
+                type: "line", // also try bar or other graph types
+
+                // The data for our dataset
+                data: {
+                    labels: [
+                        "Jan",
+                        "Fab",
+                        "Mar",
+                        "Apr",
+                        "May",
+                        "Jun",
+                        "Jul",
+                        "Aug",
+                        "Sep",
+                        "Oct",
+                        "Nov",
+                        "Dec",
+                    ],
+                    // Information about the dataset
+                    datasets: [
+                        {
+                            label: "",
+                            backgroundColor: "transparent",
+                            borderColor: "#4A6CF7",
+                            data: [
+                                600, 800, 750, 880, 940, 880, 900, 770, 920, 890, 976, 1100,
+                            ],
+                            pointBackgroundColor: "transparent",
+                            pointHoverBackgroundColor: "#4A6CF7",
+                            pointBorderColor: "transparent",
+                            pointHoverBorderColor: "#fff",
+                            pointHoverBorderWidth: 5,
+                            pointBorderWidth: 5,
+                            pointRadius: 8,
+                            pointHoverRadius: 8,
+                        },
+                    ],
+                },
+
+                // Configuration options
+                defaultFontFamily: "Inter",
+                options: {
+                    tooltips: {
+                        callbacks: {
+                            labelColor: function (tooltipItem, chart) {
+                                return {
+                                    backgroundColor: "#ffffff",
+                                };
+                            },
+                        },
+                        intersect: false,
+                        backgroundColor: "#f9f9f9",
+                        titleFontFamily: "Inter",
+                        titleFontColor: "#8F92A1",
+                        titleFontColor: "#8F92A1",
+                        titleFontSize: 12,
+                        bodyFontFamily: "Inter",
+                        bodyFontColor: "#171717",
+                        bodyFontStyle: "bold",
+                        bodyFontSize: 16,
+                        multiKeyBackground: "transparent",
+                        displayColors: false,
+                        xPadding: 30,
+                        yPadding: 10,
+                        bodyAlign: "center",
+                        titleAlign: "center",
+                    },
+
+                    title: {
+                        display: false,
+                    },
+                    legend: {
+                        display: false,
+                    },
+
+                    scales: {
+                        yAxes: [
+                            {
+                                gridLines: {
+                                    display: false,
+                                    drawTicks: false,
+                                    drawBorder: false,
+                                },
+                                ticks: {
+                                    padding: 35,
+                                    max: 1200,
+                                    min: 500,
+                                },
+                            },
+                        ],
+                        xAxes: [
+                            {
+                                gridLines: {
+                                    drawBorder: false,
+                                    color: "rgba(143, 146, 161, .1)",
+                                    zeroLineColor: "rgba(143, 146, 161, .1)",
+                                },
+                                ticks: {
+                                    padding: 20,
+                                },
+                            },
+                        ],
+                    },
+                },
+            });
+
+            // =========== chart one end
+
+
+        </script>
     </body>
 </html>

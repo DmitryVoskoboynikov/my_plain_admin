@@ -79,6 +79,19 @@ p {
     margin: 0px;
 }
 
+/* ========== cart style ========== */
+.card-style {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 25px 30px;
+    position: relative;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0px 10px 20px rgba(200, 208, 216, 0.3);
+    border-radius: 10px;
+}
+
+
+
 /* ============= typography css ============= */
 h1,
 h2,
@@ -143,6 +156,10 @@ h6,
 .text-sm {
     font-size: 14px;
     line-height: 22px;
+}
+
+.text-medium {
+    font-weight: 500;
 }
 
 /* ========== breadcrumb ============ */
@@ -780,6 +797,87 @@ h6,
     color: #9b51e0;
 }
 
+.icon-card .icon.success {
+    background: rgba(33, 150, 83, 0.1);
+    color: #219653;
+}
+
+.icon-card .icon.primary {
+    background: rgba(74, 108, 247, 0.1);
+    color: #4a6cf7;
+}
+
+.icon-card .icon.orange {
+    background: rgba(242, 153, 74, 0.1);
+    color: #f2994a;
+}
+
+/* ========= select style ========== */
+.select-style-1 {
+    margin-bottom: 30px;
+}
+
+
+
+.select-style-1 .select-position {
+    position: relative;
+}
+
+.select-style-1 .select-position::after {
+    border-bottom: 2px solid #5d657b;
+    border-right: 2px solid #5d657b;
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    margin-top: -5px;
+    pointer-events: none;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.select-style-1 .select-position.select-sm::after {
+    margin-top: -8px;
+}
+
+.select-style-1 .select-position.select-sm select {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+
+.select-style-1 .select-position select {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 16px;
+    padding-right: 38px;
+    color: #5d657b;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.select-style-1 .select-position select:focus {
+    border-color: #4a6cf7;
+    outline: none;
+}
+.select-style-1 .select-position select.light-bg {
+    background: rgba(239, 239, 239, 0.5);
+}
+
 /* ======= Margin Right ======= */
 .mr-20 {
     margin-right: 20px;
@@ -812,6 +910,17 @@ h6,
 .text-gray {
     color: #5d657b !important;
 }
+
+.text-danger {
+    color: #d50100 !important;
+}
+
+/* ======== Background Colors ========== */
+.light-bg {
+    background-color: #efefef;
+}
+
+
 
 
 

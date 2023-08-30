@@ -77,3 +77,15 @@ Version: 4.0
 .lni-arrow-up::before {
     content: "\eb15";
 }
+
+.lni-dollar::before {
+    content: "\eb39";
+}
+
+.lni-arrow-down::before {
+    content: "\eb1d";
+}
+
+.lni-credit-cards::before {
+    content: "\eb3c";
+}
