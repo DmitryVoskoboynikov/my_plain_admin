@@ -677,9 +677,49 @@
                         </div>
                         <!-- End Col -->
 
+                        <div class="col-lg-5">
+                            <div class="card-style mb-30">
+                                <div
+                                    class="
+                                        title
+                                        d-flex
+                                        flex-wrap
+                                        align-items-center
+                                        justify-content-between
+                                    "
+                                >
+                                    <div class="left">
+                                        <h6 class="text-medium mb-30">Sales/Revenue</h6>
+                                    </div>
+                                    <div class="right">
+                                        <div class="select-style-1">
+                                            <div class="select-position select-sm">
+                                                <select class="light-bg">
+                                                    <option value="">Yearly</option>
+                                                    <option value="">Monthly</option>
+                                                    <option value="">Weekly</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- end select -->
+                                    </div>
+                                </div>
+                                <!-- End Title -->
+                                <div class="chart">
+                                    <canvas
+                                            id="Chart2"
+                                            style="width: 100%; height: 400px"
+                                    ></canvas>
+                                </div>
+                                <!-- End Chart -->
+                            </div>
+                        </div>
+                        <!-- End Col -->
 
                     </div>
                     <!-- End Row -->
+
+
 
                 </div>
             </section>
@@ -807,6 +847,107 @@
             });
 
             // =========== chart one end
+
+            // =========== chart two start
+            const ctx2 = document.getElementById("Chart2").getContext("2d");
+            const chart2 = new Chart(ctx2, {
+                // The type of chart we want to create
+                type: "bar", // also try bar or other graph types
+                // The data for our dataset
+                data: {
+                    labels: [
+                        "Jan",
+                        "Fab",
+                        "Mar",
+                        "Apr",
+                        "May",
+                        "Jun",
+                        "Jul",
+                        "Aug",
+                        "Sep",
+                        "Oct",
+                        "Nov",
+                        "Dec",
+                    ],
+                    // Information about the dataset
+                    datasets: [
+                        {
+                            label: "",
+                            backgroundColor: "#4A6CF7",
+                            barThickness: 6,
+                            maxBarThickness: 8,
+                            data: [
+                                600, 700, 1000, 700, 650, 800, 690, 740, 720, 1120, 876, 900,
+                            ],
+                        },
+                    ],
+                },
+                // Configuration options
+                options: {
+                    borderColor: "#F3F6F8",
+                    borderWidth: 15,
+                    backgroundColor: "#F3F6F8",
+                    tooltips: {
+                        callbacks: {
+                            labelColor: function (tooltipItem, chart) {
+                                return {
+                                    backgroundColor: "rgba(104, 110, 255, .0)",
+                                };
+                            },
+                        },
+                        backgroundColor: "#F3F6F8",
+                        titleFontColor: "#8F92A1",
+                        titleFontSize: 12,
+                        bodyFontColor: "#171717",
+                        bodyFontStyle: "bold",
+                        bodyFontSize: 16,
+                        multiKeyBackground: "transparent",
+                        displayColors: false,
+                        xPadding: 30,
+                        yPadding: 10,
+                        bodyAlign: "center",
+                        titleAlign: "center",
+                    },
+
+                    title: {
+                        display: false,
+                    },
+                    legend: {
+                        display: false,
+                    },
+
+                    scales: {
+                        yAxes: [
+                            {
+                                gridLines: {
+                                    display: false,
+                                    drawTicks: false,
+                                    drawBorder: false,
+                                },
+                                ticks: {
+                                    padding: 35,
+                                    max: 1200,
+                                    min: 0,
+                                },
+                            },
+                        ],
+                        xAxes: [
+                            {
+                                gridLines: {
+                                    display: false,
+                                    drawBorder: false,
+                                    color: "rgba(143, 146, 161, .1)",
+                                    zeroLineColor: "rgba(143, 146, 161, .1)",
+                                },
+                                ticks: {
+                                    padding: 20,
+                                },
+                            },
+                        ],
+                    },
+                },
+            });
+            // =========== chart two end
 
 
         </script>
