@@ -90,7 +90,46 @@ p {
     border-radius: 10px;
 }
 
+@media (max-width: 767px) {
+    .card-style {
+        padding: 20px;
+    }
+}
 
+.card-style .jvm-zoom-btn {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+}
+.card-style .jvm-zoom-btn.jvm-zoomin {
+    bottom: 70px;
+}
+.card-style .dropdown-toggle {
+    border: none;
+    background: none;
+}
+.card-style .dropdown-toggle::after {
+    display: none;
+}
+.card-style .dropdown-menu {
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+}
+.card-style .dropdown-menu li:hover a {
+    color: #4a6cf7 !important;
+}
+.card-style .dropdown-menu li a {
+    display: block;
+    font-size: 14px;
+}
 
 /* ============= typography css ============= */
 h1,
