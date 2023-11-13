@@ -201,6 +201,35 @@ h6,
     font-weight: 500;
 }
 
+/* ========== table css ============= */
+.table {
+    border-collapse: inherit;
+    border-spacing: 0px;
+}
+
+.table > :not(caption) > * > * {
+    padding: 15px 0;
+    border-bottom-color: #efefef;
+    vertical-align: middle;
+}
+
+.table > :not(:last-child) > :last-child > * {
+    border-bottom-color: #efefef;
+}
+
+.table th h6 {
+    font-weight: 500;
+    color: #262d3f;
+    font-size: 14px;
+}
+
+.top-selling-table tr th,
+.top-selling-table tr td {
+    vertical-align: middle;
+    padding: 10px 5px;
+}
+
+
 /* ========== breadcrumb ============ */
 .breadcrumb-wrapper {
     display: flex;
