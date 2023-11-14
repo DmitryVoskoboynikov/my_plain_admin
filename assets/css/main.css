@@ -217,6 +217,15 @@ h6,
     border-bottom-color: #efefef;
 }
 
+.table tbody tr:first-child > * {
+    padding-top: 20px;
+}
+
+.table tbody tr:last-child > * {
+    border-bottom-color: transparent;
+    padding-bottom: 0px;
+}
+
 .table th h6 {
     font-weight: 500;
     color: #262d3f;
@@ -228,6 +237,77 @@ h6,
     vertical-align: middle;
     padding: 10px 5px;
 }
+
+.top-selling-table tr .min-width {
+    min-width: 80px;
+    white-space: nowrap;
+}
+
+.top-selling-table .form-check-input[type=checkbox] {
+    margin-left: 5px;
+}
+
+.top-selling-table .product {
+    display: flex;
+    align-items: center;
+    min-width: 150px;
+}
+.top-selling-table .product .image {
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 15px;
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+}
+.top-selling-table .product .image img {
+    width: 100%;
+}
+.top-selling-table .product p {
+    width: 100%;
+}
+
+.table td p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #5d657b;
+}
+.table td p a {
+    color: inherit;
+}
+.table td p a:hover {
+    color: #4a6cf7;
+}
+
+.table .action {
+    display: flex;
+    align-items: center;
+}
+.table .action button {
+    border: none;
+    background: transparent;
+    padding: 0px 6px;
+    font-size: 18px;
+}
+.table .action button.edit:hover {
+    color: #4a6cf7;
+}
+.table .action button::after {
+    display: none;
+}
+.table .action .dropdown-menu {
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+}
+.table .action .dropdown-menu li:hover a {
+    color: #4a6cf7 !important;
+}
+.table .action .dropdown-menu li a {
+    display: block;
+}
+
+/* ========== end of table ========== */
 
 
 /* ========== breadcrumb ============ */
@@ -961,6 +1041,10 @@ h6,
 }
 
 /* ======= Margin Left ======= */
+.ml-10 {
+    margin-left: 10px;
+}
+
 .ml-15 {
     margin-left: 15px;
 }

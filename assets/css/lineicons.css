@@ -89,3 +89,7 @@ Version: 4.0
 .lni-credit-cards::before {
     content: "\eb3c";
 }
+
+.lni-more-alt::before {
+    content: "\eabb";
+}
