@@ -756,3 +756,12 @@ select {
 .justify-content-end {
     justify-content: flex-end !important;
 }
+
+
+/* ================ Margins ======================== */
+
+.mb-2 {
+    margin-bottom: 0.5rem !important;
+}
+
+/* ================ End of Margins ================= */
