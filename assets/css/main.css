@@ -1067,9 +1067,101 @@ h6,
     color: #d50100 !important;
 }
 
+.text-dark {
+    color: #262d3f !important;
+}
+
 /* ======== Background Colors ========== */
+.primary-bg {
+    background-color: #4a6cf7;
+}
+
+.secondary-bg {
+    background-color: #00c1f8;
+}
+
+.success-bg {
+    background-color: #219653;
+}
+
+.danger-bg {
+    background-color: #d50100;
+}
+
+.warning-bg {
+    background-color: #f7c800;
+}
+
+.info-bg {
+    background-color: #97ca31;
+}
+
+.dark-bg {
+    background-color: #262d3f;
+}
+
 .light-bg {
     background-color: #efefef;
+}
+
+.active-bg {
+    background-color: #4a6cf7;
+}
+
+.deactive-bg {
+    background-color: #cbe1ff;
+}
+
+.deactive-bg {
+    background-color: #cbe1ff;
+}
+
+.gray-bg {
+    background-color: #5d657b;
+}
+
+.purple-bg {
+    background-color: #9b51e0;
+}
+
+.orange-bg {
+    background-color: #f2994a;
+}
+
+.deep-blue-bg {
+    background-color: #345d9d;
+}
+
+/* ======= Dashboards ================== */
+
+.legend3 li {
+    margin-right: 25px;
+}
+.legend3 li div {
+    white-space: nowrap;
+}
+.legend3 li .bg-color {
+    position: relative;
+    margin-left: 12px;
+    border-radius: 50%;
+}
+.legend3 li .bg-color::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: inherit;
+    left: -12px;
+    top: 5px;
+}
+.legend3 li .text {
+    margin-left: 10px;
+}
+.legend3 li .text p {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 
