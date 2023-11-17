@@ -401,82 +401,12 @@ select {
     margin-top: var(--bs-gutter-y);
 }
 
-/* ================ col ===================== */
-
-.col-6 {
-    flex: 0 0 auto;
-    width: 50%;
-}
-
-@media (min-width: 576px) {
-    .col-sm-6 {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-
-
-}
-
-@media (min-width: 768px) {
-    .col-md-5 {
-        flex: 0 0 auto;
-        width: 41.66666667%;
-    }
-
-    .col-md-6 {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-
-    .col-md-7 {
-        flex: 0 0 auto;
-        width: 58.33333333%;
-    }
-
-}
-
-@media (min-width: 992px) {
-    .col-lg-4 {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-    }
-
-    .col-lg-5 {
-        flex: 0 0 auto;
-        width: 41.66666667%;
-    }
-
-    .col-lg-7 {
-        flex: 0 0 auto;
-        width: 58.33333333%;
-    }
-
-}
-
-@media (min-width: 1200px) {
-    .col-xl-3 {
-        flex: 0 0 auto;
-        width: 25%;
-    }
-
-
-}
-
-/* ================ end of col ============== */
-
 .d-flex {
     display: flex !important;
 }
 
 .d-none {
     display: none !important;
-}
-
-@media (min-width: 768px) {
-    .d-md-flex {
-        display: flex !important;
-    }
-
 }
 
 .align-items-center {
@@ -757,6 +687,10 @@ select {
     justify-content: flex-end !important;
 }
 
+.justify-content-center {
+    justify-content: center !important;
+}
+
 
 /* ================ Margins ======================== */
 
@@ -774,3 +708,71 @@ select {
 }
 
 /* ================ End of Texts =================== */
+
+/* ================ col ===================== */
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+@media (min-width: 576px) {
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .col-md-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .col-md-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
+    .justify-content-md-end {
+        justify-content: flex-end !important;
+    }
+
+    .d-md-flex {
+        display: flex !important;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    .col-lg-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+    .col-lg-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .col-xl-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+
+}
