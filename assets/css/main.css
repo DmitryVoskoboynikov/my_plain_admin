@@ -1224,6 +1224,51 @@ h6,
     border-color: transparent;
 }
 
+/* ====== Status Button ====== */
+.status-btn {
+    padding: 7px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.status-btn.primary-btn {
+    color: #fff;
+    background: #4a6cf7;
+}
+.status-btn.active-btn {
+    color: #4a6cf7;
+    background: rgba(74, 108, 247, 0.1);
+}
+.status-btn.close-btn {
+    color: #d50100;
+    background: rgba(213, 1, 0, 0.1);
+}
+.status-btn.warning-btn {
+    color: #f7c800;
+    background: rgba(247, 200, 0, 0.1);
+}
+.status-btn.info-btn {
+    color: #97ca31;
+    background: rgba(151, 202, 49, 0.1);
+}
+.status-btn.success-btn {
+    color: #219653;
+    background: rgba(33, 150, 83, 0.1);
+}
+.status-btn.secondary-btn {
+    color: #00c1f8;
+    background: rgba(0, 193, 248, 0.1);
+}
+.status-btn.dark-btn {
+    color: #262d3f;
+    background: rgba(38, 45, 63, 0.1);
+}
+.status-btn.orange-btn {
+    color: #f2994a;
+    background: rgba(242, 153, 74, 0.1);
+}
+
+
 
 
 

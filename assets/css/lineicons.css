@@ -93,3 +93,11 @@ Version: 4.0
 .lni-more-alt::before {
     content: "\eabb";
 }
+
+.lni-arrows-vertical::before {
+    content: "\eb13";
+}
+
+.lni-pencil::before {
+    content: "\eaf3";
+}
