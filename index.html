@@ -14,7 +14,7 @@
         <!-- ======== All css files linkup ======== -->
         <link rel="stylesheet" href="assets/css/bootstrap.css" />
         <link rel="stylesheet" href="assets/css/lineicons.css" />
-        <link rel="stylesheet" href="assets/css/materialdesignicons.css" />
+        <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
         <link rel="stylesheet" href="assets/css/fullcalendar.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
     </head>
@@ -1190,6 +1190,18 @@
                     </div>
                     <!-- End Row -->
 
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="card-style calendar-card mb-30">
+                                <div id="calendar-mini"></div>
+                            </div>
+                        </div>
+                        <!-- End Col -->
+
+
+                    </div>
+                    <!-- End Row -->
+
 
                 </div>
             </section>
@@ -1201,6 +1213,7 @@
         <script src="assets/js/bootstrap.bundle.js"></script>
         <script src="assets/js/Chart.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/fullcalendar.js"></script>
         <script src="assets/js/jvectormap.min.js"></script>
         <script src="assets/js/world-merc.js"></script>
 
@@ -1250,6 +1263,18 @@
                         fontSize: 14,
                     },
                 },
+            });
+
+            // ====== calendar activation
+            document.addEventListener("DOMContentLoaded", function () {
+                var calendarMiniEl = document.getElementById("calendar-mini");
+                var calendarMini = new FullCalendar.Calendar(calendarMiniEl, {
+                    initialView: "dayGridMonth",
+                    headerToolbar: {
+                        end: "today prev,next",
+                    },
+                });
+                calendarMini.render();
             });
 
             // =========== chart one start
