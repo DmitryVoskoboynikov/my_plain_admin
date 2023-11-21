@@ -44,6 +44,22 @@ a {
     display: inline-block;
 }
 
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
 /* =========== Sidebar css ================== */
 .sidebar-nav-wrapper {
     background: #fff;
@@ -74,4 +90,138 @@ a {
     padding: 0 25px;
     margin-bottom: 30px;
 }
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item {
+    position: relative;
+    margin: 5px 0px;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children > a {
+    color: #262d3f;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children > a::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children > a::after {
+    content: "\eb11";
+    font: normal normal normal 1em/1 "LineIcons";
+    position: absolute;
+    right: 25px;
+    top: 18px;
+    font-size: 12px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children > a.collapsed::before {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children > a.collapsed::after {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul {
+    padding: 0px 15px;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li {
+    margin-bottom: 10px;
+}
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 6px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li a.active,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li a:hover {
+    color: #4a6cf7;
+    border-color: rgba(74, 108, 247, 0.15);
+    background: rgba(74, 108, 247, 0.1);
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children > a.collapsed {
+    color: #5d657b;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item a {
+    display: flex;
+    align-items: center;
+    color: #5d657b;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 10px 25px;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: #4a6cf7;
+    border-radius: 0 3px 3px 0px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item a span.text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item a .icon {
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item a .icon svg {
+    fill: currentColor;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.active > a::before,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.active > a.collapsed::before,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item:hover > a::before,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item:hover > a.collapsed::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 /* =========== End of Sidebar css =========== */

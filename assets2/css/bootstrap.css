@@ -158,6 +158,30 @@ body {
     --bs-breakpoint-xxl: 1400px;
 }
 
+ol,
+ul {
+    padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
 /* ========== Links ========= */
 a {
     color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
