@@ -320,6 +320,45 @@ h3,
 
 /* =========== End of Sidebar css =========== */
 
+/* =========== Header css =================== */
+.header {
+    padding: 30px 0;
+    background: #fff;
+}
+
+.header .header-left .menu-toggle-btn .main-btn {
+    padding: 0px 15px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========== End of Header css ============ */
+
+/* =========== Main wrapper ================= */
+.main-wrapper {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    margin-left: 250px;
+    min-height: 100vh;
+    padding-bottom: 85px;
+    position: relative;
+}
+
+.main-wrapper .container-fluid {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/* =========== End of Main wrapper ========== */
+
 /* =========== Promo Box ==================== */
 .promo-box {
     box-shadow: 0px 10px 20px rgba(200, 208, 216, 0.3);
@@ -347,3 +386,16 @@ h3,
     width: 100%;
 }
 /* =========== End of Promo Box ============= */
+
+/* ========== DEFAULT CSS =================== */
+
+
+/* ======= Margin Right ===================== */
+
+
+.mr-20 {
+    margin-right: 20px;
+}
+/* ======== End of Margin Right  ============ */
+
+/* ========== End of DEFAULT CSS ============ */
