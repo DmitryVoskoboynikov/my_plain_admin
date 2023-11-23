@@ -319,6 +319,16 @@ a {
     display: flex !important;
 }
 
+.d-none {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .d-md-flex {
+        display: flex !important;
+    }
+}
+
 /* ========= Align ========== */
 
 

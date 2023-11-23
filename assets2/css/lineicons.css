@@ -23,3 +23,7 @@
 .lni-chevron-left::before {
     content: "\eb0f";
 }
+
+.lni-search-alt::before {
+    content: "\ea17";
+}
