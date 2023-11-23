@@ -18,12 +18,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 .lni-chevron-left::before {
     content: "\eb0f";
 }
 
 .lni-search-alt::before {
     content: "\ea17";
+}
+
+.lni-pencil-alt::before {
+    content: "\eaf4";
 }

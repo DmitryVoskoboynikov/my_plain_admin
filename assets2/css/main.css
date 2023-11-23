@@ -75,6 +75,20 @@ ol {
     list-style-type: none;
 }
 
+/* ========== card style ========== */
+.card-style {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 25px 30px;
+    position: relative;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0px 10px 20px rgba(200, 208, 216, 0.3);
+    border-radius: 10px;
+}
+
+
+/* ========== end of carr style === */
+
 /* ============= typography css ============= */
 h1,
 h2,
@@ -92,13 +106,44 @@ h6,
     margin: 0;
 }
 
+h2,
+.h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
 h3,
 .h3 {
     font-size: 24px;
     font-weight: 500;
 }
 
+h6,
+.h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 /* ============= end of typography css ====== */
+
+/* ========== breadcrumb ============ */
+.breadcrumb-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.breadcrumb-wrapper .breadcrumb li {
+    font-size: 14px;
+    color: #4a6cf7;
+}
+
+.breadcrumb-wrapper .breadcrumb li a {
+    color: #5d657b;
+}
+.breadcrumb-wrapper .breadcrumb li a:hover {
+    color: #4a6cf7;
+}
+/* ========== End of breadcrumb ===== */
 
 /* ========== Buttons css ========== */
 /* buttons base styles */
@@ -442,14 +487,20 @@ h3,
 /* =========== End of Promo Box ============= */
 
 /* ========== DEFAULT CSS =================== */
-
-
+/* ========== Margin Bottom ================= */
+.mb-30 {
+    margin-bottom: 30px;
+}
+/* ========== End Of Margin Bottom ========== */
 /* ======= Margin Right ===================== */
-
-
 .mr-20 {
     margin-right: 20px;
 }
 /* ======== End of Margin Right  ============ */
 
+/* ======= Padding Top ====================== */
+.pt-30 {
+    padding-top: 30px;
+}
+/* ======= End of Padding Top =============== */
 /* ========== End of DEFAULT CSS ============ */
