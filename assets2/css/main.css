@@ -401,6 +401,99 @@ h6,
 
 /* =========== End of Sidebar css =========== */
 
+/* =========== form elements css =========== */
+/* ===== input style ===== */
+.input-style-1 {
+    position: relative;
+    margin-bottom: 30px;
+}
+.input-style-1 label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262d3f;
+    display: block;
+    margin-bottom: 10px;
+}
+.input-style-1 input,
+.input-style-1 textarea {
+    width: 100%;
+    background: rgba(239, 239, 239, 0.5);
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 16px;
+    color: #5d657b;
+    resize: none;
+    transition: all 0.3s;
+}
+.input-style-1 input:focus,
+.input-style-1 textarea:focus {
+    border-color: #4a6cf7;
+    background: #fff;
+}
+/* ========= select style ========== */
+.select-style-1 {
+    margin-bottom: 30px;
+}
+.select-style-1 label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262d3f;
+    display: block;
+    margin-bottom: 10px;
+}
+.select-style-1 .select-position {
+    position: relative;
+}
+.select-style-1 .select-position::after {
+    border-bottom: 2px solid #5d657b;
+    border-right: 2px solid #5d657b;
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    margin-top: -5px;
+    pointer-events: none;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.select-style-1 .select-position select {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 16px;
+    padding-right: 38px;
+    color: #5d657b;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+.select-style-1 .select-position select:focus {
+    border-color: #4a6cf7;
+    outline: none;
+}
+.select-style-1 .select-position select.light-bg {
+    background: rgba(239, 239, 239, 0.5);
+}
+.select-style-1 .select-position select.light-bg:focus {
+    background: #fff;
+}
+/* =========== end of form elements css ===== */
+
+
+
 /* =========== Header css =================== */
 .header {
     padding: 30px 0;
@@ -526,6 +619,9 @@ h6,
 }
 /* =========== end of settings css ========== */
 
+
+
+
 /* =========== Promo Box ==================== */
 .promo-box {
     box-shadow: 0px 10px 20px rgba(200, 208, 216, 0.3);
@@ -554,6 +650,9 @@ h6,
 }
 /* =========== End of Promo Box ============= */
 
+
+
+
 /* ========== DEFAULT CSS =================== */
 /* ========== Margin Bottom ================= */
 .mb-10 {
@@ -577,6 +676,18 @@ h6,
 /* ======= End of Padding Top =============== */
 /* ========== End of DEFAULT CSS ============ */
 
+
+
+
+/* ======== Background Colors =============== */
+.light-bg {
+    background-color: #efefef;
+}
+/* ======== End of Background Colors ========= */
+
+
+
+
 /* ======== Text Colors ========== */
 .text-dark {
     color: #262d3f !important;
@@ -586,5 +697,8 @@ h6,
     color: #5d657b !important;
 }
 /* ======== End of Text Colors === */
+
+
+
 
 /* ========= Font Weight =========== */
