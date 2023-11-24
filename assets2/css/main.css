@@ -75,6 +75,13 @@ ol {
     list-style-type: none;
 }
 
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0px;
+}
+
 /* ========== card style ========== */
 .card-style {
     background: #fff;
@@ -118,12 +125,26 @@ h3,
     font-weight: 500;
 }
 
+h5,
+.h5 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
 h6,
 .h6 {
     font-size: 16px;
     font-weight: 600;
 }
 
+.text-bold {
+    font-weight: 700;
+}
+
+.text-sm {
+    font-size: 14px;
+    line-height: 22px;
+}
 /* ============= end of typography css ====== */
 
 /* ========== breadcrumb ============ */
@@ -458,6 +479,53 @@ h6,
 
 /* =========== End of Main wrapper ========== */
 
+/* =========== settings css ================= */
+.settings-card-1 .profile-info .profile-image {
+    max-width: 75px;
+    width: 100%;
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.settings-card-1 .profile-info .profile-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+.settings-card-1 .profile-info .profile-image .update-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #efefef;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99;
+}
+.settings-card-1 .profile-info .profile-image .update-image:hover {
+    opacity: 0.9;
+}
+.settings-card-1 .profile-info .profile-image .update-image input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 99;
+}
+.settings-card-1 .profile-info .profile-image .update-image label {
+    cursor: pointer;
+    z-index: 99;
+}
+/* =========== end of settings css ========== */
+
 /* =========== Promo Box ==================== */
 .promo-box {
     box-shadow: 0px 10px 20px rgba(200, 208, 216, 0.3);
@@ -488,6 +556,10 @@ h6,
 
 /* ========== DEFAULT CSS =================== */
 /* ========== Margin Bottom ================= */
+.mb-10 {
+    margin-bottom: 10px;
+}
+
 .mb-30 {
     margin-bottom: 30px;
 }
@@ -504,3 +576,15 @@ h6,
 }
 /* ======= End of Padding Top =============== */
 /* ========== End of DEFAULT CSS ============ */
+
+/* ======== Text Colors ========== */
+.text-dark {
+    color: #262d3f !important;
+}
+
+.text-gray {
+    color: #5d657b !important;
+}
+/* ======== End of Text Colors === */
+
+/* ========= Font Weight =========== */

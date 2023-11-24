@@ -18,6 +18,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.lni-cloud-upload::before {
+    content: "\ea41";
+}
+
 .lni-chevron-left::before {
     content: "\eb0f";
 }
