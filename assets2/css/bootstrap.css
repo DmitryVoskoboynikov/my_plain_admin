@@ -386,9 +386,17 @@ a {
     justify-content: space-between !important;
 }
 
+.justify-content-center {
+    justify-content: center !important;
+}
+
 /* ========= Align ========== */
 .align-items-center {
     align-items: center !important;
+}
+
+.order-last {
+    order: 6 !important;
 }
 
 /* ========== END Scope ====== */
@@ -433,6 +441,10 @@ a {
 /* ========= End of Breadcrumb == */
 
 /* ========= Scope ============== */
+.text-center {
+    text-align: center !important;
+}
+
 .border-0 {
     border: 0 !important;
 }
@@ -445,5 +457,19 @@ a {
 .text-dark {
     --bs-text-opacity: 1;
     color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+}
+
+@media (min-width: 768px) {
+    .order-md-first {
+        order: -1 !important;
+    }
+
+    .text-md-start {
+        text-align: left !important;
+    }
+
+    .justify-content-md-end {
+        justify-content: flex-end !important;
+    }
 }
 

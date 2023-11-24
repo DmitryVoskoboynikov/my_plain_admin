@@ -569,7 +569,21 @@ h6,
     padding-right: 40px;
 }
 
+.main-wrapper .footer {
+    padding: 25px 0;
+    justify-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
+.main-wrapper .footer .copyright p a {
+    color: inherit;
+}
+
+.main-wrapper .footer .terms a {
+    color: #5d657b;
+}
 /* =========== End of Main wrapper ========== */
 
 /* =========== settings css ================= */
@@ -668,6 +682,12 @@ h6,
     margin-right: 20px;
 }
 /* ======== End of Margin Right  ============ */
+
+/* ======== Margin Left ===================== */
+.ml-15 {
+    margin-left: 15px;
+}
+/* ======== End of Margin Left ============== */
 
 /* ======= Padding Top ====================== */
 .pt-30 {
