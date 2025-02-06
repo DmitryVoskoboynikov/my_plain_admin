@@ -22,3 +22,34 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+/* =========== Sidebar css =========== */
+.sidebar-nav-wrapper {
+    background: #fff;
+    width: 250px;
+    padding: 20px 0px;
+    height: 100vh;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0px 0px 30px 0px rgba(200, 208, 216, 0.3);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.sidebar-nav-wrapper .navbar-logo {
+    padding: 0 25px;
+    margin-bottom: 30px;
+    margin-top: 11px;
+}
