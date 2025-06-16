@@ -23,6 +23,18 @@ body {
     box-sizing: border-box;
 }
 
+
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+
+
+
 /* =========== Sidebar css =========== */
 .sidebar-nav-wrapper {
     background: #fff;
