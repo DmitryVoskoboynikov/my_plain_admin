@@ -23,7 +23,26 @@ body {
     box-sizing: border-box;
 }
 
+button,
+a {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
 
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+i,
+span,
+a {
+    display: inline-block;
+}
 
 ul,
 ol {
@@ -64,4 +83,84 @@ ol {
     padding: 0 25px;
     margin-bottom: 30px;
     margin-top: 11px;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item {
+    position: relative;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children > a {
+    color: #1A2142;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children > a::after {
+    content: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.34306 7.76387L9.02356 3.8071C9.32923 3.47851 9.11273 2.91666 8.68048 2.91666L1.31947 2.91666C0.887218 2.91666 0.670743 3.47851 0.976393 3.8071L4.6569 7.76387C4.8464 7.96758 5.15356 7.96758 5.34306 7.76387Z' fill='%239AA4CA'/%3E%3C/svg%3E%0A");
+    position: absolute;
+    right: 25px;
+    top: 11px;
+    font-size: 12px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children > a.collapsed {
+    color: #9AA4CA;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.active > a,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.active > a.collapsed,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item:hover > a,
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item:hover > a.collapsed {
+    color: #1A2142;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children > a.collapsed::after {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item a {
+    display: flex;
+    align-items: center;
+    color: #9AA4CA;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 7px 25px;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item a span.text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.sidebar-nav-wrapper .sidebar-nav ul .nav-item a .icon {
+    margin-right: 12px;
+    margin-top: -4px;
+    font-size: 18px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
 }
