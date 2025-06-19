@@ -225,6 +225,41 @@ a {
     text-decoration: underline;
 }
 
+img,
+svg {
+    vertical-align: middle;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+
+h3, .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+    h3, .h3 {
+        font-size: 1.75rem;
+    }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
 
 
 :root {
@@ -234,4 +269,9 @@ a {
     --bs-breakpoint-lg: 992px;
     --bs-breakpoint-xl: 1200px;
     --bs-breakpoint-xxl: 1400px;
+}
+
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
