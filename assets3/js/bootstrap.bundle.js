@@ -57,6 +57,38 @@
         }
     };
 
+    /**
+     * --------------------------------------------------------------------------
+     * Bootstrap util/index.js
+     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+     * --------------------------------------------------------------------------
+     */
+
+    const MAX_UID = 1000000;
+    const MILLISECONDS_MULTIPLIER = 1000;
+    const TRANSITION_END = 'transitionend';
+
+    /**
+     * Properly escape IDs selectors to handle weird IDs
+     * @param {string} selector
+     * @returns {string}
+     */
+    const parseSelector = selector => {
+        if (selector && window.CSS && window.CSS.escape) {
+            // document.querySelector needs escaping to handle IDs (html5+) containing for instance /
+            selector = selector.replace(/#([^\s"#']+)/g, (match, id) => `#${CSS.escape(id)}`);
+        }
+        return selector;
+    };
+
+    // Shout-out Angus Croll (https://goo.gl/pxwQGp)
+    const toType = object => {
+        if (object === null || object === undefined) {
+            return `${object}`;
+        }
+        return Object.prototype.toString.call(object).match(/\s([a-z]+)/i)[1].toLowerCase();
+    };
+
 
 
 
