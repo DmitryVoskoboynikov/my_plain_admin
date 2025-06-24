@@ -307,4 +307,30 @@ p {
 
 /* ========== DEFAULT CSS ======== */
 
+/* ========== header css ========== */
+.header {
+    padding: 22px 0;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.main-wrapper {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    margin-left: 250px;
+    min-height: 100vh;
+    padding-bottom: 85px;
+    position: relative;
+}
+
+.main-wrapper .container-fluid {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 
