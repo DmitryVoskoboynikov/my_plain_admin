@@ -89,6 +89,17 @@
         return Object.prototype.toString.call(object).match(/\s([a-z]+)/i)[1].toLowerCase();
     };
 
+    /**
+     * Public Util API
+     */
+
+    const getUID = prefix => {
+        do {
+            prefix += Math.floor(Math.random() * MAX_UID);
+        } while (document.getElementById(prefix));
+        return prefix;
+    };
+
 
 
 
