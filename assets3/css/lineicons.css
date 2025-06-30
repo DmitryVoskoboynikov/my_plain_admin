@@ -1,0 +1,34 @@
+/*--------------------------------
+
+Lineicons Free Web Font
+Crafted by Lineicons.com Team
+Version: 4.0
+
+-------------------------------- */
+
+@font-face {
+    font-family: 'lineicons';
+    src: url('../fonts/lineicons.eot');
+    src: url('../fonts/lineicons.eot') format('embedded-opentype'),
+    url('../fonts/lineicons.woff2') format('woff2'),
+    url('../fonts/lineicons.woff') format('woff'),
+    url('../fonts/lineicons.ttf') format('truetype'),
+    url('../fonts/lineicons.svg') format('svg');
+}
+
+/* base class */
+.lni {
+    display: inline-block;
+    font: normal normal normal 1em/1 'lineicons';
+    color: inherit;
+    flex-shrink: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* icons */
+
+
+.lni-chevron-left::before {
+    content: "\eb0f";
+}

@@ -107,6 +107,10 @@ p {
     overflow: hidden;
 }
 
+.main-btn i {
+    font-size: 17px;
+}
+
 /* buttons hover effect */
 .btn-hover {
     position: relative;
@@ -316,6 +320,14 @@ p {
     z-index: 99;
 }
 
+.header .header-left .menu-toggle-btn .main-btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main-wrapper {
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
@@ -331,6 +343,11 @@ p {
 .main-wrapper .container-fluid {
     padding-left: 40px;
     padding-right: 40px;
+}
+
+
+.mr-15 {
+    margin-right: 15px;
 }
 
 
