@@ -376,8 +376,18 @@ button:not(:disabled),
 }
 
 
+.d-none {
+    display: none !important;
+}
+
 .d-flex {
     display: flex !important;
+}
+
+@media (min-width: 768px) {
+    .d-md-flex {
+        display: flex !important;
+    }
 }
 
 
