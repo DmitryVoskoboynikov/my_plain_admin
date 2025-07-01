@@ -99,8 +99,71 @@
         } while (document.getElementById(prefix));
         return prefix;
     };
+    const getTransitionDurationFromElement = element => {
+        if (!element) {
+            return 0;
+        }
 
+        // Get transition-duration of the element
+        let {
+            transitionDuration,
+            transitionDelay
+        } = window.getComputedStyle(element);
+        const floatTransitionDuration = Number.parseFloat(transitionDuration);
+        const floatTransitionDelay = Number.parseFloat(transitionDelay);
 
+        // Return 0 if element or transition duration is not found
+        if (!floatTransitionDuration && !floatTransitionDelay) {
+            return 0;
+        }
 
+        // If multiple durations are defined, take the first
+        transitionDuration = transitionDuration.split(',')[0];
+        transitionDelay = transitionDelay.split(',')[0];
+        return (Number.parseFloat(transitionDuration) + Number.parseFloat(transitionDelay)) * MILLISECONDS_MULTIPLIER;
+    };
+    const triggerTransitionEnd = element => {
+        element.dispatchEvent(new Event(TRANSITION_END));
+    };
+    const isElement$1 = object => {
+        if (!object || typeof object !== 'object') {
+            return false;
+        }
+        if (typeof object.jquery !== 'undefined') {
+            object = object[0];
+        }
+        return typeof object.nodeType !== 'undefined';
+    };
+    const getElement = object => {
+        // it's a jQuery object or a node element
+        if (isElement$1(object)) {
+            return object.jquery ? object[0] : object;
+        }
+        if (typeof object === 'string' && object.length > 0) {
+            return document.querySelector(parseSelector(object));
+        }
+        return null;
+    };
+    const isVisible = element => {
+        if (!isElement$1(element) || element.getClientRects().length === 0) {
+            return false;
+        }
+        const elementIsVisible = getComputedStyle(element).getPropertyValue('visibility') === 'visible';
+        // Handle `details` element as its content may falsie appear visible when it is closed
+        const closedDetails = element.closest('details:not([open])');
+        if (!closedDetails) {
+            return elementIsVisible;
+        }
+        if (closedDetails !== element) {
+            const summary = element.closest('summary');
+            if (summary && summary.parentNode !== closedDetails) {
+                return false;
+            }
+            if (summary === null) {
+                return false;
+            }
+        }
+        return elementIsVisible;
+    };
 
 }));
