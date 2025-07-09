@@ -89,6 +89,12 @@ h3,
     font-weight: 500;
 }
 
+h6,
+.h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 p {
     font-size: 16px;
     font-weight: 400;
@@ -418,9 +424,83 @@ p {
     right: 0;
 }
 
+.header .header-right .dropdown-menu {
+    width: 350px;
+    border: 1px solid #efefef;
+    padding: 10px 10px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    top: 21px !important;
+    right: 0;
+    position: absolute;
+    transform: translate3d(0px, 60px, 0px);
+    border-radius: 10px;
+}
+
+.header .header-right .notification-box .dropdown-menu.dropdown-menu-end {
+    transform: translate3d(0px, 60px, 0px);
+}
+
+.header .header-right .header-message-box .dropdown-menu.dropdown-menu-end {
+    transform: translate3d(0px, 60px, 0px);
+}
+
+.header .header-right .profile-box {
+    display: flex;
+    position: relative;
+}
+
+.header .header-right .profile-box button {
+    width: auto;
+}
+
+.header .header-right .profile-box .profile-info {
+    margin: 0 5px;
+}
+
+.header .header-right .profile-box .profile-info .info {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-right .profile-box .profile-info .info .image {
+    border: 1px solid #DFE5EF;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    margin-right: 14px;
+    position: relative;
+}
+
+.header .header-right .profile-box .profile-info .info .image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.header .header-right .profile-box .dropdown-menu {
+    width: 10rem;
+    min-width: 190px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 16px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+}
+
+.header .header-right .profile-box .dropdown-menu.dropdown-menu-end {
+    transform: translate3d(0px, 60px, 0px);
+}
+
 .header .header-right .notification-box,
 .header .header-right .header-message-box {
     position: relative;
+}
+
+.header .header-right .profile-box .profile-info .info p {
+    font-size: 12px;
+    text-align: left;
 }
 
 .main-wrapper {
@@ -1890,3 +1970,32 @@ p {
     padding-right: 225px;
 }
 
+
+/* ========= Font Weight =========== */
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
